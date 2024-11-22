@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family:
+    Montserrat,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+  background-color: #000;
+
+  .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.5;
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background-color: #fff;
+      animation: twinkling-stars linear infinite;
+      animation-duration: 2s;
+    }
+  }
+
+  header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 70%);
+  }
+
+  main {
+    position: relative;
+    min-height: calc(100vh - 80px);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    margin: 80px 0;
+
+    .main-content {
+      max-width: 1600px;
+      width: 100%;
+    }
+
+    .over-comet {
+      background-image: url('/images/overComet.png');
+
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      filter: brightness(0.7) saturate(0.2);
+      opacity: 0.75;
+
+      object-fit: cover;
+
+      left: 0;
+      top: -315px;
+      z-index: -1;
+    }
+  }
+
+  footer {
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-shrink: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 70%);
+  }
+}
+
+@keyframes twinkling-stars {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
