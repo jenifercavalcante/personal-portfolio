@@ -10,6 +10,7 @@ export default function Stars() {
             style={{
               top: `${Math.random() * 100}vh`,
               left: `${Math.random() * 100}vw`,
+              animationDelay: `${Math.random() * 2}s`,
             }}
             key={star}
           ></span>
