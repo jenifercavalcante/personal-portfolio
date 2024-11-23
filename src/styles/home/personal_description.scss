@@ -1,0 +1,32 @@
+.personal-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff;
+  max-width: 680px;
+
+  .title-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .hilighted {
+      color: #fffca4;
+    }
+
+    .title {
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  .description {
+    text-align: justify;
+    max-width: 600px;
+  }
+}
