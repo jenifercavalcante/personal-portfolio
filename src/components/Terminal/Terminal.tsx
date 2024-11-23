@@ -16,9 +16,19 @@ export default function Terminal() {
 
   return (
     <div className="terminal">
-      <div className="nav-info"></div>
+      <div className="nav-info">
+        <div className="actions">
+          <div className="circle red"></div>
+          <div className="circle yellow"></div>
+          <div className="circle green"></div>
+        </div>
 
-      <div className="content">{getContent()}</div>
+        <span className="title">Jenifer Cavalcante:~</span>
+      </div>
+
+      <div className="content">
+        <span>{getContent()}</span>
+      </div>
     </div>
   );
 }
