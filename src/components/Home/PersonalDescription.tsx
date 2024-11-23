@@ -4,12 +4,12 @@ export default function PersonalDescription() {
   return (
     <div className="personal-description-container">
       <span className="title-wrapper">
-        <span className="title">
+        <h1 className="title">
           <span className="hilighted">Hi</span>, <br />
           I&apos;m a Front-End <br />
           Developer!
-        </span>
-        <span className="subtitle">Building Impactful Web Experiences</span>
+        </h1>
+        <h2 className="subtitle">Building Impactful Web Experiences</h2>
       </span>
 
       <span className="description">
