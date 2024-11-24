@@ -3,7 +3,9 @@
   border: 1px solid #fff;
   border-radius: 10px;
   background-color: #000;
-  max-width: 700px;
+  max-width: 680px;
+  min-width: 300px;
+  flex: 1;
 
   .nav-info {
     min-height: 35px;
@@ -14,6 +16,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    user-select: none;
 
     .actions {
       position: absolute;
