@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           <div className="main-content">{children}</div>
         </main>
-        <footer>
+        <footer id="footer">
           <Footer />
         </footer>
 
