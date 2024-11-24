@@ -29,4 +29,10 @@
     text-align: justify;
     max-width: 600px;
   }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
 }

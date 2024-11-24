@@ -1,4 +1,5 @@
 import '@/styles/home/personal_description.scss';
+import Button from '../Buttons';
 
 export default function PersonalDescription() {
   return (
@@ -18,7 +19,10 @@ export default function PersonalDescription() {
         together!
       </span>
 
-      <div className="actions"></div>
+      <div className="actions">
+        <Button.White>About Me</Button.White>
+        <Button.White outline={true}>Get In Touch</Button.White>
+      </div>
     </div>
   );
 }
