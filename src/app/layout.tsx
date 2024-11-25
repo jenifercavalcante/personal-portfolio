@@ -1,3 +1,4 @@
+import FooterContent from '@/components/Footer/Footer';
 import Footer from '@/components/Footer/Footer';
 import Lain from '@/components/Lain/Lain';
 import Navbar from '@/components/Navbar/Navbar';
@@ -24,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="main-content">{children}</div>
         </main>
         <footer id="footer">
-          <Footer />
+          <FooterContent />
         </footer>
 
         <Lain />
