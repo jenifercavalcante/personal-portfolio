@@ -26,9 +26,15 @@ export default function Terminal() {
         <span className="title">Jenifer Cavalcante:~</span>
       </div>
 
-      <div className="content">
-        <span>{getContent()}</span>
-      </div>
+      <span className="terminal-sing">~</span>
+
+      <div
+        className="content"
+        contentEditable
+        dangerouslySetInnerHTML={{
+          __html: getContent(),
+        }}
+      ></div>
     </div>
   );
 }

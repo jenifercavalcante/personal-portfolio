@@ -6,6 +6,7 @@
   max-width: 680px;
   min-width: 300px;
   flex: 1;
+  position: relative;
 
   .nav-info {
     min-height: 35px;
@@ -51,9 +52,20 @@
     }
   }
 
+  .terminal-sing {
+    position: absolute;
+    left: 5px;
+    font-weight: bold;
+  }
+
   .content {
     font-size: max(min(1rem, 1.2vw, calc(1.2 * 700px / 100)), 0.7rem);
     text-align: left;
     white-space: pre;
+    padding: 0 1rem;
+
+    &:focus {
+      outline: none;
+    }
   }
 }

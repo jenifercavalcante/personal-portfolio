@@ -28,11 +28,23 @@
   .description {
     text-align: justify;
     max-width: 600px;
+
+    .cursor {
+      margin-left: 3px;
+      border-left: 2px solid #ffffff;
+      animation: blink 0.8s infinite;
+    }
   }
 
   .actions {
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }

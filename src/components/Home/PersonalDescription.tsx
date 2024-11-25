@@ -17,6 +17,7 @@ export default function PersonalDescription() {
         I&apos;m passionate about delivering clean, maintainable code and building interfaces that
         delight users while driving measurable results. Let&apos;s create something remarkable
         together!
+        <span className="cursor"></span>
       </span>
 
       <div className="actions">
