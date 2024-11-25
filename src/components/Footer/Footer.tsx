@@ -30,26 +30,38 @@ export default function FooterContent() {
               <span className="title">Contact me</span>
 
               <div className="buttons">
-                <Link href="/">
-                  <Button.White className="social-btn">
+                <Link
+                  href="https://www.linkedin.com/in/jenifer-cavalcante-183417218"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button.White className="social-btn" aria-label="Linkedin">
                     <SlSocialLinkedin size={20} />
                   </Button.White>
                 </Link>
 
-                <Link href="/">
-                  <Button.White className="social-btn">
+                <Link
+                  href="https://github.com/jenifercavalcante"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button.White className="social-btn" aria-label="Github">
                     <SlSocialGithub size={20} />
                   </Button.White>
                 </Link>
 
-                <Link href="/">
-                  <Button.White className="social-btn">
+                <Link href="https://t.me/jeninjeni" target="_blank" rel="noopener noreferrer">
+                  <Button.White className="social-btn" aria-label="Telegram">
                     <PiTelegramLogo size={20} />
                   </Button.White>
                 </Link>
 
-                <Link href="/">
-                  <Button.White className="social-btn">
+                <Link
+                  href="https://www.figma.com/@jenifercavalcan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button.White className="social-btn" aria-label="Figma">
                     <PiFigmaLogo size={20} />
                   </Button.White>
                 </Link>
