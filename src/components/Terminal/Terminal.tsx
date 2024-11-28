@@ -1,6 +1,6 @@
 'use client';
 
-import { TerminalDefaultText } from '@/constansts/terminal';
+import { TerminalDefaultText } from '@/constants/terminal';
 import { usePathname } from 'next/navigation';
 
 import '@/styles/terminal.scss';
