@@ -1,6 +1,6 @@
-import '@/styles/navbar.scss';
+import './NavBar.style.scss';
 import Link from 'next/link';
-import NavPages from './NavPages';
+import NavPages from './NavPages/NavPages';
 
 export default function Navbar() {
   return (

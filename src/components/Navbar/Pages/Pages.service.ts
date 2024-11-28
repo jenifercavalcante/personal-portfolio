@@ -1,12 +1,7 @@
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-interface Props {
-  setIsMenuOpen: (val: boolean) => void;
-}
-
-export default function Pages({ setIsMenuOpen }: Props) {
+export const usePagesService = (setIsMenuOpen: (isOpen: boolean) => void) => {
   const router = usePathname();
   const [isFooterOnFocus, setIsFooterOnFocus] = useState(false);
 
@@ -40,15 +35,9 @@ export default function Pages({ setIsMenuOpen }: Props) {
     };
   }, []);
 
-  return (
-    <>
-      <Link className={`navbar-link ${isActive('/') ? 'active' : ''}`} href="/">
-        Home
-      </Link>
-
-      <span className={`navbar-link ${isFooterOnFocus ? 'active' : ''}`} onClick={handleScroll}>
-        Contact
-      </span>
-    </>
-  );
-}
+  return {
+    isActive,
+    isFooterOnFocus,
+    handleScroll,
+  };
+};
