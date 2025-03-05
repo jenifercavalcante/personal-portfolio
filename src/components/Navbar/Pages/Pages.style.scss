@@ -1,0 +1,14 @@
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-self: self-start;
+
+  &.active {
+    border-radius: 7px;
+    background-color: #75757538;
+  }
+}

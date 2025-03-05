@@ -1,25 +1,12 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-import Pages from './Pages';
+import Pages from '../Pages/Pages';
+import { useNavPagesService } from './NavPages.service';
+import './NavPages.style.scss';
 
 export default function Features() {
-  const router = usePathname();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [router]);
-
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [router]);
+  const { isMenuOpen, setIsMenuOpen, toggleMenu } = useNavPagesService();
 
   return (
     <>
