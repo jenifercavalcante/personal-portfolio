@@ -1,7 +1,12 @@
+'use client';
+
 import '@/styles/home/personal_description.scss';
 import Button from '../Buttons';
+import { useRouter } from 'next/navigation';
 
 export default function PersonalDescription() {
+  const router = useRouter();
+
   return (
     <div className="personal-description-container">
       <span className="title-wrapper">
@@ -21,7 +26,13 @@ export default function PersonalDescription() {
       </span>
 
       <div className="actions">
-        <Button.White>About Me</Button.White>
+        <Button.White
+          onClick={() => {
+            router.push('/about-me');
+          }}
+        >
+          About Me
+        </Button.White>
         <Button.White outline={true}>Get In Touch</Button.White>
       </div>
     </div>

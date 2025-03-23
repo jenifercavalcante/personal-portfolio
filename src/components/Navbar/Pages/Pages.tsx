@@ -13,6 +13,10 @@ export default function Pages({ setIsMenuOpen }: IPages) {
         Home
       </Link>
 
+      <Link className={`navbar-link ${isActive('/about-me') ? 'active' : ''}`} href="/about-me">
+        About Me
+      </Link>
+
       <span className={`navbar-link ${isFooterOnFocus ? 'active' : ''}`} onClick={handleScroll}>
         Contact
       </span>

@@ -72,12 +72,31 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0 2rem;
-    margin: 80px 0;
+    margin-top: 80px;
     flex-shrink: 0;
 
     .main-content {
       max-width: 1600px;
       width: 100%;
+      min-height: calc(100vh - 80px);
+
+      .container {
+        min-height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 24px;
+      }
+
+      .container-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        flex: 1;
+      }
     }
 
     .over-comet {
