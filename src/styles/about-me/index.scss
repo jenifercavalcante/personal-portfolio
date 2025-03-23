@@ -1,8 +1,80 @@
-.home-container {
+.about-me-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 3rem;
   column-gap: 1rem;
+  width: 100%;
+  align-items: center;
+  padding: 2rem 0;
+
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #fff;
+    max-width: 680px;
+    width: 100%;
+
+    .actions {
+      display: flex;
+      flex-direction: row;
+      column-gap: 1rem;
+    }
+  }
+
+  .about-me-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 1301px) {
+    .about-me-image {
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .about-me-image {
+      flex: 1;
+
+      img {
+        width: 350px;
+        height: 350px;
+      }
+    }
+  }
+
+  @media (max-width: 1160px) {
+    .about-me-image {
+      flex: 1;
+
+      img {
+        width: 450px;
+        height: 450px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .about-me-image {
+      flex: 1;
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .about-me-container {
+    flex-direction: column-reverse;
+  }
 }

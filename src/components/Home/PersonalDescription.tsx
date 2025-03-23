@@ -11,8 +11,9 @@ export default function PersonalDescription() {
   return (
     <div className="personal-description-container">
       <Text.Wrapper>
+        <Text.Hilighted>Hi</Text.Hilighted>
+
         <Text.Title>
-          <Text.Hilighted>Hi</Text.Hilighted>, <br />
           I&apos;m a Front-End <br />
           Developer!
         </Text.Title>
