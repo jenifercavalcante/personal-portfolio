@@ -4,7 +4,7 @@
   cursor: pointer;
   border-radius: 20px;
   font-weight: 500;
-  max-width: fit-content;
+  width: max-content;
 
   &:active {
     transform: translateY(0);
