@@ -27,17 +27,12 @@
     text-align: justify;
     max-width: 600px;
     color: #fff;
+    width: 100%;
 
     .cursor {
       margin-left: 3px;
       border-left: 2px solid #ffffff;
       animation: blink 0.8s infinite;
     }
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
   }
 }

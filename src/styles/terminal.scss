@@ -64,6 +64,8 @@
     white-space: pre;
     padding: 0 1rem;
     min-height: 320px;
+    width: 100%;
+    overflow: hidden;
 
     &:focus {
       outline: none;
