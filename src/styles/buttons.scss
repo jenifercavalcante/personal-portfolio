@@ -1,8 +1,10 @@
 .btn {
+  all: unset;
   padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: 20px;
   font-weight: 500;
+  width: max-content;
 
   &:active {
     transform: translateY(0);
@@ -37,4 +39,21 @@
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
+}
+
+.btn-text {
+  background-color: transparent;
+  color: white;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }

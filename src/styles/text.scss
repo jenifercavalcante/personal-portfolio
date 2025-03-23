@@ -1,0 +1,38 @@
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .hilighted {
+    color: #fffca4;
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .description {
+    margin-top: 1rem;
+    text-align: justify;
+    max-width: 600px;
+    color: #fff;
+    width: 100%;
+
+    .cursor {
+      margin-left: 3px;
+      border-left: 2px solid #ffffff;
+      animation: blink 0.8s infinite;
+    }
+  }
+}

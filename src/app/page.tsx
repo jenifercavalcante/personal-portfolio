@@ -5,10 +5,12 @@ import '@/styles/home/index.scss';
 
 export default function Home() {
   return (
-    <div className="home-container">
-      <PersonalDescription />
+    <div className="container container-center">
+      <div className="home-container">
+        <PersonalDescription />
 
-      <Terminal />
+        <Terminal />
+      </div>
     </div>
   );
 }
